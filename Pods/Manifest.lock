@@ -1,0 +1,35 @@
+PODS:
+  - Alamofire (4.6.0)
+  - DynamicColor (4.0.2)
+  - Kingfisher (4.5.0)
+  - ObjectMapper (3.1.0)
+  - PhoneNumberKit (2.1.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 2.1.0)
+    - PhoneNumberKit/UIKit (= 2.1.0)
+  - PhoneNumberKit/PhoneNumberKitCore (2.1.0)
+  - PhoneNumberKit/UIKit (2.1.0):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - PKHUD (5.0.0)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.6.0)
+  - DynamicColor (~> 4.0.2)
+  - Kingfisher (~> 4.5.0)
+  - ObjectMapper (~> 3.1.0)
+  - PhoneNumberKit (~> 2.1.0)
+  - PKHUD (~> 5.0.0)
+  - SnapKit (~> 4.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  DynamicColor: c7adcfe871781a2b39877a5774e452ba51b79eb3
+  Kingfisher: 26ae0473102b77b575da51960c932431e3745407
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  PhoneNumberKit: 62003f40ff75315fd3738286558bc365365ac222
+  PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: bd56eee71dba96ca17cefefe8c88f668e3be9f62
+
+COCOAPODS: 1.2.1
