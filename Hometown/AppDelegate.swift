@@ -44,9 +44,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     fileprivate func initRootViewController() -> UIViewController? {
         let root: UIViewController?
-        let nav = getStoryboardInstantiateViewController(identifier: "loginNav")
-        root = nav
-//        root = getStoryboardInstantiateViewController(identifier: "Main")
+        if !UserManager.sharedInstance.openId.isEmpty {
+           root = getStoryboardInstantiateViewController(identifier: "Main")
+        } else {
+           root = getStoryboardInstantiateViewController(identifier: "loginNav")
+        }
         return root
     }
     

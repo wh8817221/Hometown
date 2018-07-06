@@ -180,10 +180,27 @@
                     <view key="view" contentMode="scaleToFill" id="5ns-dQ-IzQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfA-bo-Clf">
+                                <rect key="frame" x="40" y="311.5" width="295" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="yqb-04-9gI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cfA-bo-Clf" firstAttribute="leading" secondItem="fkZ-M3-16O" secondAttribute="leading" constant="40" id="0kG-5s-BTU"/>
+                            <constraint firstItem="cfA-bo-Clf" firstAttribute="centerY" secondItem="5ns-dQ-IzQ" secondAttribute="centerY" id="8Il-oF-HSN"/>
+                            <constraint firstItem="fkZ-M3-16O" firstAttribute="trailing" secondItem="cfA-bo-Clf" secondAttribute="trailing" constant="40" id="seS-mw-h74"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fkZ-M3-16O"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ux2-oj-ne1"/>
+                    <connections>
+                        <outlet property="logoutButton" destination="cfA-bo-Clf" id="Y1k-vr-HvF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pol-Rg-bWY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

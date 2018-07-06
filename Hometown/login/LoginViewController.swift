@@ -43,7 +43,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         phoneTF.clearButtonMode = .whileEditing
         phoneTF.keyboardType = .numberPad
         phoneTF.returnKeyType = .next
-//        phoneTF.text = UserManager.sharedInstance.phoneNumber
+        phoneTF.text = "18101377455"
         
         line1.backgroundColor = kLineColor
         line2.backgroundColor = kLineColor
@@ -60,6 +60,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordTF.leftViewMode = .always
         passwordTF.isSecureTextEntry = true
         passwordTF.returnKeyType = .go
+        passwordTF.text = "1"
         
         loginButton.setTitle("登录", for: .normal)
         loginButton.setTitleColor(kWhiteColor, for: .normal)
@@ -138,7 +139,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 case .success(let result):
                     if result.code == 0 {
                         PKHUD.sharedHUD.hide(afterDelay: 0.25)
-                        
+
                         // clear pwd
                         self.passwordTF.text = nil
                         if let data = result.data, let open_id = data.open_id {
@@ -151,6 +152,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                         }
                         
                     } else {
+                        
                         self.processResponseError(result.code, msg: result.msg, error: result.error)
                     }
                 case .failure(_):

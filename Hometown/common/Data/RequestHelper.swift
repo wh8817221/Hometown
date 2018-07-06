@@ -18,7 +18,7 @@ extension DataRequest {
             guard error == nil else { return .failure(error!) }
             let result = DataRequest.serializeResponseJSON(options: .allowFragments, response: response, data: data, error: error)
             
-//            print(result.value as Any)
+            print(result.value as Any)
 
             if let parsedObject = Mapper<T>().map(JSONObject: result.value) {
                 return .success(parsedObject)
@@ -35,9 +35,7 @@ extension DataRequest {
 
 
 enum RequestHelper {
-    static let baseURL = "https://www.chapiaotong.com/wx"
-//    static let baseURL = "http://192.168.1.100:2000"
-//    static let baseURL = "http://58.87.67.99"   // testIn
+    static let baseURL = "http:192.168.1.244:8000"
     static let apiVerion = 0
     
     static let errorUpdateForce = 40011

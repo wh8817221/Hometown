@@ -10,25 +10,29 @@ import UIKit
 
 class MeViewController: UIViewController {
 
+    @IBOutlet weak var logoutButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.title = BXLocalizedString("个人", comment: "")
+        
+        logoutButton.setTitle(BXLocalizedString("退出登录", comment: ""), for: .normal)
+        logoutButton.setTitleColor(kWhiteColor, for: .normal)
+        logoutButton.titleLabel?.font = kFont16
+        logoutButton.backgroundColor = kThemeColor
+        logoutButton.addTarget(self, action: #selector(logoutAction(_:)), for: .touchUpInside)
     }
 
+    @objc fileprivate func logoutAction(_ sender: UIButton) {
+        UserManager.sharedInstance.openId = ""
+        let root = getStoryboardInstantiateViewController(identifier: "loginNav")
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        delegate.changeRootViewController(root!, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
