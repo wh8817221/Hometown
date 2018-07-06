@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import PKHUD
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var iconImageView: UIImageView!
@@ -24,33 +26,45 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         iconImageView.image = UIImage(named:"icon")
-        nameLabel.text = "家宝"
-        nameLabel.textColor = UIColor.purple
-        nameLabel.font = UIFont.systemFont(ofSize: 16)
+        iconImageView.radiusView(iconImageView.frame.height/2)
+        nameLabel.text = "家乡帮"
+        nameLabel.textColor = kThemeColor
+        nameLabel.font = kFont16.bold(size: 16)
         
         phoneLabel.text = "手机号"
-        phoneLabel.textColor = UIColor.black
-        phoneLabel.font = UIFont.systemFont(ofSize: 14)
-        phoneTF.placeholder = "请输入手机号"
-        phoneTF.textColor = UIColor.purple
-        phoneTF.keyboardType = .numberPad
-        phoneTF.delegate = self
+        phoneLabel.textColor = kThemeColor
+        phoneLabel.font = kFont14
         
-        line1.backgroundColor = UIColor.gray
-        line2.backgroundColor = UIColor.gray
+        phoneTF.setPlaceholder(placeholder: "请输入手机号", color: kLineColor, font: kFont16)
+        phoneTF.tintColor = kThemeColor
+        phoneTF.textColor = kThemeColor
+        phoneTF.font = kFont16
+        phoneTF.delegate = self
+        phoneTF.clearButtonMode = .whileEditing
+        phoneTF.keyboardType = .numberPad
+        phoneTF.returnKeyType = .next
+//        phoneTF.text = UserManager.sharedInstance.phoneNumber
+        
+        line1.backgroundColor = kLineColor
+        line2.backgroundColor = kLineColor
         
         passwordLabel.text = "密码"
-        passwordLabel.textColor = UIColor.black
-        passwordLabel.font = UIFont.systemFont(ofSize: 14)
-        passwordTF.placeholder = "请输入密码"
-        passwordTF.textColor = UIColor.purple
-        passwordTF.keyboardType = .numberPad
+        passwordLabel.textColor = kThemeColor
+        passwordLabel.font = kFont14
+        
+        passwordTF.setPlaceholder(placeholder: "请输入密码", color: kLineColor, font: kFont16)
+        passwordTF.tintColor = kThemeColor
+        passwordTF.textColor = kThemeColor
+        passwordTF.font = kFont16
         passwordTF.delegate = self
+        passwordTF.leftViewMode = .always
+        passwordTF.isSecureTextEntry = true
+        passwordTF.returnKeyType = .go
         
         loginButton.setTitle("登录", for: .normal)
-        loginButton.setTitleColor(UIColor.white, for: .normal)
-        loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 16)
-        loginButton.backgroundColor = UIColor.purple
+        loginButton.setTitleColor(kWhiteColor, for: .normal)
+        loginButton.titleLabel?.font = kFont16
+        loginButton.backgroundColor = kThemeColor
         loginButton.addTarget(self, action: #selector(loginAction(_ :)), for: .touchUpInside)
         
         
@@ -93,7 +107,56 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @objc fileprivate func loginAction(_ sender: UIButton) {
-        print("登录")
+        if phoneTF.isFirstResponder {phoneTF.resignFirstResponder()}
+        if passwordTF.isFirstResponder {passwordTF.resignFirstResponder()}
+        
+        guard let telephone = phoneTF.text, !telephone.isEmpty else {
+            showHideTextHUD(BXLocalizedString("请输入手机号", comment: ""))
+            return
+        }
+        
+        if let _ = Int64(telephone) {
+            if !isValidMobile(telephone) {
+                showHideTextHUD(BXLocalizedString("请输入正确手机号", comment: ""))
+                return
+            }
+        }
+        
+        guard let password = passwordTF.text, !password.isEmpty else {
+            showHideTextHUD(BXLocalizedString("请输入密码", comment: ""))
+            return
+        }
+        
+        PKHUD.sharedHUD.contentView = PKHUDProgressView()
+        PKHUD.sharedHUD.show()
+        
+        let d1 = ["telephone": telephone, "password": password]
+        let d2 = RequestHelper.userLogin(d1).generate()
+        Alamofire.request(d2.url, method: .post, parameters: d2.params, encoding: JSONEncoding.default, headers: nil)
+            .responseObjectMapper {(response: DataResponse<Result<ObjectLogin>>) -> Void in
+                switch response.result {
+                case .success(let result):
+                    if result.code == 0 {
+                        PKHUD.sharedHUD.hide(afterDelay: 0.25)
+                        
+                        // clear pwd
+                        self.passwordTF.text = nil
+                        if let data = result.data, let open_id = data.open_id {
+                            // kaychain user
+                            UserManager.sharedInstance.setUser(open_id, telephone: data.telephone ?? "")
+                           
+                            let root = getStoryboardInstantiateViewController(identifier: "Main") as! MainViewController
+                            let delegate = UIApplication.shared.delegate as! AppDelegate
+                            delegate.changeRootViewController(root, animated: true)
+                        }
+                        
+                    } else {
+                        self.processResponseError(result.code, msg: result.msg, error: result.error)
+                    }
+                case .failure(_):
+                    self.processNetworkError()
+                }
+        }
     }
     
     
