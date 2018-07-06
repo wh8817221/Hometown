@@ -31,7 +31,7 @@ let navHeight:CGFloat = IS_IPHONE_X ? 24 : 0
 let tabHeight:CGFloat = IS_IPHONE_X ? 34 : 0
 
 //MARK:-主题颜色
-let kThemeColor = UIColor(hexString: "#fde2e5")
+let kThemeColor = UIColor(hexString: "#4eb6fd")
 let kTintedColor = kThemeColor.tinted(amount: 0.14)
 
 let kCircleColor = UIColor(hexString: "#aaaaaa")

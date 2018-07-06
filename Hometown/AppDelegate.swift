@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import pop
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,12 +19,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         initAppearance()
-        
+        // window(使用sb选择性的初始化rootViewController会导致异常释放)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = initRootViewController()
+        self.window?.backgroundColor = .white
+        self.window?.makeKeyAndVisible()
+
         return true
     }
 
     fileprivate func initAppearance() {
+        // ios 9
+        window?.tintColor = kThemeColor
         
+        UINavigationBar.appearance().barStyle = .black
+        UINavigationBar.appearance().barTintColor = kThemeColor
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        UIToolbar.appearance().tintColor = kThemeColor
+        UITextField.appearance().tintColor = kThemeColor
+        UITextView.appearance().tintColor = kThemeColor
+        UITabBar.appearance().tintColor = kThemeColor
+    }
+    
+    fileprivate func initRootViewController() -> UIViewController? {
+        let root: UIViewController?
+        let nav = getStoryboardInstantiateViewController(identifier: "loginNav")
+        root = nav
+//        root = getStoryboardInstantiateViewController(identifier: "Main")
+        return root
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
@@ -47,6 +72,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    // MARK: - Public
+    func changeRootViewController(_ root: UIViewController, animated:Bool) {
+        window?.rootViewController = root
+        
+        if animated {
+            let layer = root.view.layer
+            layer.pop_removeAllAnimations()
+            root.view.pop_removeAllAnimations()
+            
+            let width = window?.frame.width ?? 0;
+            let height = window?.frame.height ?? 0;
+            let move = POPSpringAnimation(propertyNamed: kPOPLayerPosition)
+            move?.springBounciness = 16;
+            move?.springSpeed = 10;
+            move?.fromValue = NSValue(cgPoint: CGPoint(x: width*1.5, y: height*0.5))
+            layer.pop_add(move, forKey: "position")
+        }
+    }
 
 }
 
