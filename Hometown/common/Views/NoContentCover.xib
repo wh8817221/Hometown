@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page_null" translatesAutoresizingMaskIntoConstraints="NO" id="gQc-6L-F6w">
+                    <rect key="frame" x="216.5" y="203.5" width="167" height="93"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lty-vs-q5h">
+                    <rect key="frame" x="20" y="339" width="560" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyz-dv-uLM">
+                    <rect key="frame" x="20" y="311.5" width="560" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Lty-vs-q5h" firstAttribute="top" secondItem="lyz-dv-uLM" secondAttribute="bottom" constant="8" id="1Ca-ql-8ZL"/>
+                <constraint firstItem="gQc-6L-F6w" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-50" id="CX7-BH-fIV"/>
+                <constraint firstItem="Lty-vs-q5h" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="KKQ-ow-9DT"/>
+                <constraint firstItem="lyz-dv-uLM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="Kdd-5A-Jy0"/>
+                <constraint firstItem="lyz-dv-uLM" firstAttribute="top" secondItem="gQc-6L-F6w" secondAttribute="bottom" constant="15" id="Urv-Kv-qQq"/>
+                <constraint firstItem="Lty-vs-q5h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="Ywu-lQ-uuZ"/>
+                <constraint firstItem="gQc-6L-F6w" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Z6x-sx-aLW"/>
+                <constraint firstItem="lyz-dv-uLM" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="cOU-BG-vJF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33" y="-100"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="page_null" width="167" height="93"/>
+    </resources>
+</document>

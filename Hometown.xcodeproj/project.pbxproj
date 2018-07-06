@@ -17,6 +17,41 @@
 		D258F30B20EF0E4400479F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D258F30920EF0E4400479F12 /* LaunchScreen.storyboard */; };
 		D258F31620EF0E4400479F12 /* HometownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F31520EF0E4400479F12 /* HometownTests.swift */; };
 		D258F32120EF0E4400479F12 /* HometownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F32020EF0E4400479F12 /* HometownUITests.swift */; };
+		D258F32F20EF10E800479F12 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D258F32E20EF10E800479F12 /* Login.storyboard */; };
+		D258F33620EF14D500479F12 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F33520EF14D500479F12 /* LoginViewController.swift */; };
+		D258F33920EF19A900479F12 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F33820EF19A800479F12 /* Common.swift */; };
+		D258F36320EF1AF000479F12 /* BarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F33B20EF1AF000479F12 /* BarButtonItem.swift */; };
+		D258F36420EF1AF000479F12 /* BottombarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F33C20EF1AF000479F12 /* BottombarView.swift */; };
+		D258F36520EF1AF000479F12 /* GuideCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F33D20EF1AF000479F12 /* GuideCoverView.swift */; };
+		D258F36620EF1AF000479F12 /* GuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D258F33E20EF1AF000479F12 /* GuideView.xib */; };
+		D258F36720EF1AF000479F12 /* NoContentCover.xib in Resources */ = {isa = PBXBuildFile; fileRef = D258F33F20EF1AF000479F12 /* NoContentCover.xib */; };
+		D258F36820EF1AF000479F12 /* PasswordStrengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F34020EF1AF000479F12 /* PasswordStrengthView.swift */; };
+		D258F36A20EF1AF000479F12 /* ScaleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F34220EF1AF000479F12 /* ScaleButton.swift */; };
+		D258F36E20EF1AF000479F12 /* UnLoginCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F34620EF1AF000479F12 /* UnLoginCover.swift */; };
+		D258F36F20EF1AF000479F12 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F34920EF1AF000479F12 /* DeviceInfo.swift */; };
+		D258F37020EF1AF000479F12 /* RequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F34A20EF1AF000479F12 /* RequestHelper.swift */; };
+		D258F37120EF1AF000479F12 /* ResponseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F34B20EF1AF000479F12 /* ResponseHelper.swift */; };
+		D258F37220EF1AF000479F12 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F34C20EF1AF000479F12 /* UserManager.swift */; };
+		D258F37420EF1AF000479F12 /* CommonAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F34F20EF1AF000479F12 /* CommonAlertView.swift */; };
+		D258F37520EF1AF000479F12 /* OverlayAnimatedTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F35020EF1AF000479F12 /* OverlayAnimatedTransitioner.swift */; };
+		D258F37620EF1AF000479F12 /* OverlayPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F35120EF1AF000479F12 /* OverlayPickerViewController.swift */; };
+		D258F37720EF1AF000479F12 /* OverlayPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F35220EF1AF000479F12 /* OverlayPresentationController.swift */; };
+		D258F37820EF1AF000479F12 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F35320EF1AF000479F12 /* ScanViewController.swift */; };
+		D258F37920EF1AF000479F12 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F35420EF1AF000479F12 /* WebViewController.swift */; };
+		D258F37B20EF1AF000479F12 /* NotificationCenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F35720EF1AF000479F12 /* NotificationCenterExtension.swift */; };
+		D258F37C20EF1AF000479F12 /* NSUserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F35820EF1AF000479F12 /* NSUserDefaultsExtension.swift */; };
+		D258F37D20EF1AF000479F12 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F35920EF1AF000479F12 /* StringExtension.swift */; };
+		D258F37E20EF1AF000479F12 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F35A20EF1AF000479F12 /* UIButtonExtension.swift */; };
+		D258F37F20EF1AF000479F12 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F35B20EF1AF000479F12 /* UIColor+Extension.swift */; };
+		D258F38020EF1AF000479F12 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F35C20EF1AF000479F12 /* UIFontExtension.swift */; };
+		D258F38120EF1AF000479F12 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F35D20EF1AF000479F12 /* UIImageExtension.swift */; };
+		D258F38220EF1AF000479F12 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F35E20EF1AF000479F12 /* UILabelExtension.swift */; };
+		D258F38320EF1AF000479F12 /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F35F20EF1AF000479F12 /* UINavigationBarExtension.swift */; };
+		D258F38420EF1AF000479F12 /* UITextFiledExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F36020EF1AF000479F12 /* UITextFiledExtension.swift */; };
+		D258F38520EF1AF000479F12 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F36120EF1AF000479F12 /* UIViewControllerExtension.swift */; };
+		D258F38620EF1AF000479F12 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F36220EF1AF000479F12 /* UIViewExtension.swift */; };
+		D258F38E20EF1D4E00479F12 /* UIViewController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = D258F38A20EF1D4E00479F12 /* UIViewController+Storyboard.m */; };
+		D258F38F20EF1D4E00479F12 /* UINavigationController+TZPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D258F38D20EF1D4E00479F12 /* UINavigationController+TZPopGesture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +93,44 @@
 		D258F31C20EF0E4400479F12 /* HometownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HometownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D258F32020EF0E4400479F12 /* HometownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HometownUITests.swift; sourceTree = "<group>"; };
 		D258F32220EF0E4400479F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D258F32E20EF10E800479F12 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D258F33520EF14D500479F12 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D258F33820EF19A800479F12 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		D258F33B20EF1AF000479F12 /* BarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItem.swift; sourceTree = "<group>"; };
+		D258F33C20EF1AF000479F12 /* BottombarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottombarView.swift; sourceTree = "<group>"; };
+		D258F33D20EF1AF000479F12 /* GuideCoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideCoverView.swift; sourceTree = "<group>"; };
+		D258F33E20EF1AF000479F12 /* GuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideView.xib; sourceTree = "<group>"; };
+		D258F33F20EF1AF000479F12 /* NoContentCover.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoContentCover.xib; sourceTree = "<group>"; };
+		D258F34020EF1AF000479F12 /* PasswordStrengthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordStrengthView.swift; sourceTree = "<group>"; };
+		D258F34220EF1AF000479F12 /* ScaleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleButton.swift; sourceTree = "<group>"; };
+		D258F34620EF1AF000479F12 /* UnLoginCover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnLoginCover.swift; sourceTree = "<group>"; };
+		D258F34920EF1AF000479F12 /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		D258F34A20EF1AF000479F12 /* RequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHelper.swift; sourceTree = "<group>"; };
+		D258F34B20EF1AF000479F12 /* ResponseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseHelper.swift; sourceTree = "<group>"; };
+		D258F34C20EF1AF000479F12 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		D258F34F20EF1AF000479F12 /* CommonAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAlertView.swift; sourceTree = "<group>"; };
+		D258F35020EF1AF000479F12 /* OverlayAnimatedTransitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayAnimatedTransitioner.swift; sourceTree = "<group>"; };
+		D258F35120EF1AF000479F12 /* OverlayPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayPickerViewController.swift; sourceTree = "<group>"; };
+		D258F35220EF1AF000479F12 /* OverlayPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayPresentationController.swift; sourceTree = "<group>"; };
+		D258F35320EF1AF000479F12 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		D258F35420EF1AF000479F12 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		D258F35720EF1AF000479F12 /* NotificationCenterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtension.swift; sourceTree = "<group>"; };
+		D258F35820EF1AF000479F12 /* NSUserDefaultsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaultsExtension.swift; sourceTree = "<group>"; };
+		D258F35920EF1AF000479F12 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		D258F35A20EF1AF000479F12 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		D258F35B20EF1AF000479F12 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D258F35C20EF1AF000479F12 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		D258F35D20EF1AF000479F12 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		D258F35E20EF1AF000479F12 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		D258F35F20EF1AF000479F12 /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
+		D258F36020EF1AF000479F12 /* UITextFiledExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFiledExtension.swift; sourceTree = "<group>"; };
+		D258F36120EF1AF000479F12 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		D258F36220EF1AF000479F12 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		D258F38920EF1D4E00479F12 /* UIViewController+Storyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Storyboard.h"; sourceTree = "<group>"; };
+		D258F38A20EF1D4E00479F12 /* UIViewController+Storyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Storyboard.m"; sourceTree = "<group>"; };
+		D258F38C20EF1D4E00479F12 /* UINavigationController+TZPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+TZPopGesture.h"; sourceTree = "<group>"; };
+		D258F38D20EF1D4E00479F12 /* UINavigationController+TZPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+TZPopGesture.m"; sourceTree = "<group>"; };
+		D258F39020EF1D7C00479F12 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		D49AA14F1AA0C3B299AB4140 /* Pods-HometownTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HometownTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HometownTests/Pods-HometownTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,9 +213,17 @@
 				D258F30020EF0E4400479F12 /* AppDelegate.swift */,
 				D258F30220EF0E4400479F12 /* ViewController.swift */,
 				D258F30420EF0E4400479F12 /* Main.storyboard */,
+				D258F32E20EF10E800479F12 /* Login.storyboard */,
 				D258F30720EF0E4400479F12 /* Assets.xcassets */,
 				D258F30920EF0E4400479F12 /* LaunchScreen.storyboard */,
 				D258F30C20EF0E4400479F12 /* Info.plist */,
+				D258F39020EF1D7C00479F12 /* Bridging-Header.h */,
+				D258F33720EF16B100479F12 /* common */,
+				D258F33320EF14C000479F12 /* discover */,
+				D258F33020EF14C000479F12 /* home */,
+				D258F33420EF14C000479F12 /* login */,
+				D258F33220EF14C000479F12 /* main */,
+				D258F33120EF14C000479F12 /* me */,
 			);
 			path = Hometown;
 			sourceTree = "<group>";
@@ -163,6 +244,140 @@
 				D258F32220EF0E4400479F12 /* Info.plist */,
 			);
 			path = HometownUITests;
+			sourceTree = "<group>";
+		};
+		D258F33020EF14C000479F12 /* home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		D258F33120EF14C000479F12 /* me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = me;
+			sourceTree = "<group>";
+		};
+		D258F33220EF14C000479F12 /* main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		D258F33320EF14C000479F12 /* discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = discover;
+			sourceTree = "<group>";
+		};
+		D258F33420EF14C000479F12 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				D258F33520EF14D500479F12 /* LoginViewController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		D258F33720EF16B100479F12 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				D258F33820EF19A800479F12 /* Common.swift */,
+				D258F38720EF1D0A00479F12 /* tools */,
+				D258F34D20EF1AF000479F12 /* Controllers */,
+				D258F34820EF1AF000479F12 /* Data */,
+				D258F35620EF1AF000479F12 /* Extension */,
+				D258F33A20EF1AF000479F12 /* Views */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		D258F33A20EF1AF000479F12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D258F33B20EF1AF000479F12 /* BarButtonItem.swift */,
+				D258F33C20EF1AF000479F12 /* BottombarView.swift */,
+				D258F33D20EF1AF000479F12 /* GuideCoverView.swift */,
+				D258F33E20EF1AF000479F12 /* GuideView.xib */,
+				D258F33F20EF1AF000479F12 /* NoContentCover.xib */,
+				D258F34020EF1AF000479F12 /* PasswordStrengthView.swift */,
+				D258F34220EF1AF000479F12 /* ScaleButton.swift */,
+				D258F34620EF1AF000479F12 /* UnLoginCover.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D258F34820EF1AF000479F12 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D258F34920EF1AF000479F12 /* DeviceInfo.swift */,
+				D258F34A20EF1AF000479F12 /* RequestHelper.swift */,
+				D258F34B20EF1AF000479F12 /* ResponseHelper.swift */,
+				D258F34C20EF1AF000479F12 /* UserManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D258F34D20EF1AF000479F12 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D258F34F20EF1AF000479F12 /* CommonAlertView.swift */,
+				D258F35020EF1AF000479F12 /* OverlayAnimatedTransitioner.swift */,
+				D258F35120EF1AF000479F12 /* OverlayPickerViewController.swift */,
+				D258F35220EF1AF000479F12 /* OverlayPresentationController.swift */,
+				D258F35320EF1AF000479F12 /* ScanViewController.swift */,
+				D258F35420EF1AF000479F12 /* WebViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D258F35620EF1AF000479F12 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D258F35720EF1AF000479F12 /* NotificationCenterExtension.swift */,
+				D258F35820EF1AF000479F12 /* NSUserDefaultsExtension.swift */,
+				D258F35920EF1AF000479F12 /* StringExtension.swift */,
+				D258F35A20EF1AF000479F12 /* UIButtonExtension.swift */,
+				D258F35B20EF1AF000479F12 /* UIColor+Extension.swift */,
+				D258F35C20EF1AF000479F12 /* UIFontExtension.swift */,
+				D258F35D20EF1AF000479F12 /* UIImageExtension.swift */,
+				D258F35E20EF1AF000479F12 /* UILabelExtension.swift */,
+				D258F35F20EF1AF000479F12 /* UINavigationBarExtension.swift */,
+				D258F36020EF1AF000479F12 /* UITextFiledExtension.swift */,
+				D258F36120EF1AF000479F12 /* UIViewControllerExtension.swift */,
+				D258F36220EF1AF000479F12 /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D258F38720EF1D0A00479F12 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				D258F38B20EF1D4E00479F12 /* TZScrollViewPopGesture */,
+				D258F38820EF1D4E00479F12 /* UIViewController+Storyboard */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		D258F38820EF1D4E00479F12 /* UIViewController+Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D258F38920EF1D4E00479F12 /* UIViewController+Storyboard.h */,
+				D258F38A20EF1D4E00479F12 /* UIViewController+Storyboard.m */,
+			);
+			path = "UIViewController+Storyboard";
+			sourceTree = "<group>";
+		};
+		D258F38B20EF1D4E00479F12 /* TZScrollViewPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				D258F38C20EF1D4E00479F12 /* UINavigationController+TZPopGesture.h */,
+				D258F38D20EF1D4E00479F12 /* UINavigationController+TZPopGesture.m */,
+			);
+			path = TZScrollViewPopGesture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,8 +496,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D258F32F20EF10E800479F12 /* Login.storyboard in Resources */,
 				D258F30B20EF0E4400479F12 /* LaunchScreen.storyboard in Resources */,
+				D258F36720EF1AF000479F12 /* NoContentCover.xib in Resources */,
 				D258F30820EF0E4400479F12 /* Assets.xcassets in Resources */,
+				D258F36620EF1AF000479F12 /* GuideView.xib in Resources */,
 				D258F30620EF0E4400479F12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,8 +664,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D258F37220EF1AF000479F12 /* UserManager.swift in Sources */,
+				D258F36520EF1AF000479F12 /* GuideCoverView.swift in Sources */,
+				D258F38220EF1AF000479F12 /* UILabelExtension.swift in Sources */,
+				D258F38020EF1AF000479F12 /* UIFontExtension.swift in Sources */,
+				D258F38320EF1AF000479F12 /* UINavigationBarExtension.swift in Sources */,
+				D258F37120EF1AF000479F12 /* ResponseHelper.swift in Sources */,
+				D258F33920EF19A900479F12 /* Common.swift in Sources */,
+				D258F37420EF1AF000479F12 /* CommonAlertView.swift in Sources */,
+				D258F36E20EF1AF000479F12 /* UnLoginCover.swift in Sources */,
+				D258F37F20EF1AF000479F12 /* UIColor+Extension.swift in Sources */,
+				D258F36F20EF1AF000479F12 /* DeviceInfo.swift in Sources */,
+				D258F37C20EF1AF000479F12 /* NSUserDefaultsExtension.swift in Sources */,
+				D258F37520EF1AF000479F12 /* OverlayAnimatedTransitioner.swift in Sources */,
+				D258F37E20EF1AF000479F12 /* UIButtonExtension.swift in Sources */,
+				D258F36820EF1AF000479F12 /* PasswordStrengthView.swift in Sources */,
+				D258F37D20EF1AF000479F12 /* StringExtension.swift in Sources */,
+				D258F36420EF1AF000479F12 /* BottombarView.swift in Sources */,
+				D258F37020EF1AF000479F12 /* RequestHelper.swift in Sources */,
+				D258F37B20EF1AF000479F12 /* NotificationCenterExtension.swift in Sources */,
+				D258F37920EF1AF000479F12 /* WebViewController.swift in Sources */,
+				D258F38520EF1AF000479F12 /* UIViewControllerExtension.swift in Sources */,
+				D258F38420EF1AF000479F12 /* UITextFiledExtension.swift in Sources */,
+				D258F33620EF14D500479F12 /* LoginViewController.swift in Sources */,
+				D258F38F20EF1D4E00479F12 /* UINavigationController+TZPopGesture.m in Sources */,
+				D258F37720EF1AF000479F12 /* OverlayPresentationController.swift in Sources */,
 				D258F30320EF0E4400479F12 /* ViewController.swift in Sources */,
+				D258F38120EF1AF000479F12 /* UIImageExtension.swift in Sources */,
+				D258F37620EF1AF000479F12 /* OverlayPickerViewController.swift in Sources */,
+				D258F38620EF1AF000479F12 /* UIViewExtension.swift in Sources */,
+				D258F36320EF1AF000479F12 /* BarButtonItem.swift in Sources */,
+				D258F38E20EF1D4E00479F12 /* UIViewController+Storyboard.m in Sources */,
+				D258F36A20EF1AF000479F12 /* ScaleButton.swift in Sources */,
 				D258F30120EF0E4400479F12 /* AppDelegate.swift in Sources */,
+				D258F37820EF1AF000479F12 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +871,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = haohao.com.Hometown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hometown/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -638,6 +889,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = haohao.com.Hometown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hometown/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

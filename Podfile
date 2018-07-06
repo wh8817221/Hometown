@@ -11,6 +11,8 @@ target 'Hometown' do
   pod 'SnapKit', '~> 4.0.0'
   pod 'DynamicColor', '~> 4.0.2'
   pod 'PhoneNumberKit', '~> 2.1.0'
+  pod 'KeychainAccess', '~> 3.1.0'
+  pod 'pop', '~> 1.0.9'
   
   target 'HometownTests' do
     inherit! :search_paths
