@@ -45,6 +45,7 @@ enum RequestHelper {
     static let errorLoginFailed = 40004
     // user
     case userLogin([String: Any])
+    case userRegister([String: Any])
     case userLogout([String: Any])
     case userToken([String: Any])
     case userGet(([String: Any]))
@@ -81,6 +82,9 @@ enum RequestHelper {
         switch self {
         case .userLogin(let tmp):
             url += "/api/user/phone/login"
+            params = tmp
+        case .userRegister(let tmp):
+            url += "/api/user/phone/register"
             params = tmp
             
         case .userLogout(let tmp):

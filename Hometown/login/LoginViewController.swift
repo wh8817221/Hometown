@@ -22,9 +22,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
+    @IBOutlet weak var registerButton: UIButton!
     
+    @IBOutlet weak var forgetButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        contentView.setShadow(offset: 0, shadowColor: kThemeColor)
+        
         iconImageView.image = UIImage(named:"icon")
         iconImageView.radiusView(iconImageView.frame.height/2)
         nameLabel.text = "家乡帮"
@@ -66,8 +71,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginButton.setTitleColor(kWhiteColor, for: .normal)
         loginButton.titleLabel?.font = kFont16
         loginButton.backgroundColor = kThemeColor
-        loginButton.addTarget(self, action: #selector(loginAction(_ :)), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(loginAction(_:)), for: .touchUpInside)
         
+        registerButton.setTitleColor(kThemeColor, for: .normal)
+        registerButton.setTitle("立即注册", for: .normal)
+        registerButton.titleLabel?.font = kFont12
+        registerButton.addTarget(self, action: #selector(registerAction(_:)), for: .touchUpInside)
+        
+        forgetButton.setTitleColor(kTextColor2, for: .normal)
+        forgetButton.setTitle("忘记密码?", for: .normal)
+        forgetButton.titleLabel?.font = kFont12
+        forgetButton.addTarget(self, action: #selector(forgetAction(_:)), for: .touchUpInside)
         
         //注册通知监听键盘的出现和消失
         NotificationCenter.default.addObserver(self, selector: #selector(OverlayPickerViewController.keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
@@ -105,6 +119,20 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @objc fileprivate func forgetAction(_ sender: UIButton) {
+        let targetVC = getStoryboardInstantiateViewController(identifier: "Password") as! PasswordViewController
+        targetVC.phoneNumber = self.phoneTF.text ?? ""
+        targetVC.mode = .forget
+        self.navigationController?.pushViewController(targetVC, animated: true)
+    }
+    
+    @objc fileprivate func registerAction(_ sender: UIButton) {
+        let targetVC = getStoryboardInstantiateViewController(identifier: "Password") as! PasswordViewController
+        targetVC.phoneNumber = self.phoneTF.text ?? ""
+        targetVC.mode = .register
+        self.navigationController?.pushViewController(targetVC, animated: true)
     }
     
     @objc fileprivate func loginAction(_ sender: UIButton) {

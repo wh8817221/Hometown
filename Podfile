@@ -13,6 +13,8 @@ target 'Hometown' do
   pod 'PhoneNumberKit', '~> 2.1.0'
   pod 'KeychainAccess', '~> 3.1.0'
   pod 'pop', '~> 1.0.9'
+  pod 'TPKeyboardAvoiding'
+  pod 'zxcvbn-ios', '~> 1.0'
   
   target 'HometownTests' do
     inherit! :search_paths

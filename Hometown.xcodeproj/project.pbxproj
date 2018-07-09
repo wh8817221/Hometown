@@ -53,6 +53,7 @@
 		D258F38F20EF1D4E00479F12 /* UINavigationController+TZPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D258F38D20EF1D4E00479F12 /* UINavigationController+TZPopGesture.m */; };
 		D258F39320EF1FD400479F12 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F39120EF1FD400479F12 /* BaseNavigationViewController.swift */; };
 		D258F39420EF1FD400479F12 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258F39220EF1FD400479F12 /* MainViewController.swift */; };
+		D25AFB4520EF72E300625CC2 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25AFB4420EF72E300625CC2 /* PasswordViewController.swift */; };
 		D277F2F420EF45B500672BEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D277F2F620EF45B500672BEC /* InfoPlist.strings */; };
 		D277F2FA20EF45D500672BEC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D277F2FC20EF45D500672BEC /* Localizable.strings */; };
 		D277F2FF20EF46B000672BEC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D277F2FE20EF46B000672BEC /* HomeViewController.swift */; };
@@ -138,6 +139,7 @@
 		D258F39020EF1D7C00479F12 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		D258F39120EF1FD400479F12 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		D258F39220EF1FD400479F12 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D25AFB4420EF72E300625CC2 /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		D277F2F520EF45B500672BEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D277F2F720EF45B700672BEC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		D277F2FB20EF45D500672BEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				D258F33520EF14D500479F12 /* LoginViewController.swift */,
+				D25AFB4420EF72E300625CC2 /* PasswordViewController.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -719,6 +722,7 @@
 				D258F37720EF1AF000479F12 /* OverlayPresentationController.swift in Sources */,
 				D258F38120EF1AF000479F12 /* UIImageExtension.swift in Sources */,
 				D258F37620EF1AF000479F12 /* OverlayPickerViewController.swift in Sources */,
+				D25AFB4520EF72E300625CC2 /* PasswordViewController.swift in Sources */,
 				D258F38620EF1AF000479F12 /* UIViewExtension.swift in Sources */,
 				D258F36320EF1AF000479F12 /* BarButtonItem.swift in Sources */,
 				D258F38E20EF1D4E00479F12 /* UIViewController+Storyboard.m in Sources */,
